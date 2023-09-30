@@ -44,7 +44,7 @@ export default function Footer() {
                   Home
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink to="/landing-page" tag={Link}>
                   Landing
                 </NavLink>
@@ -58,17 +58,17 @@ export default function Footer() {
                 <NavLink to="/profile-page" tag={Link}>
                   Profile
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Col>
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
+                <NavLink href="mailto:contact.clubtime@gmail.com">
                   Contact Us
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
                   About Us
                 </NavLink>
@@ -82,7 +82,7 @@ export default function Footer() {
                 <NavLink href="https://opensource.org/licenses/MIT">
                   License
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Col>
           <Col md="3">
@@ -91,7 +91,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://twitter.com/creativetim"
+                href="https://twitter.com/useClubTime"
                 id="tooltip622135962"
                 target="_blank"
               >
@@ -103,7 +103,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://www.facebook.com/creativetim"
+                href="https://www.facebook.com/profile.php?id=61552133932133"
                 id="tooltip230450801"
                 target="_blank"
               >
@@ -115,17 +115,20 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://dribbble.com/creativetim"
+                href="https://www.instagram.com/useclubtime/"
                 id="tooltip318450378"
                 target="_blank"
               >
-                <i className="fab fa-dribbble" />
+                <i className="fab fa-instagram" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip318450378">
                 Follow us
               </UncontrolledTooltip>
             </div>
           </Col>
+        </Row>
+        <Row className="align-items-sm-center"> 
+          Copyright © Sun Flora Collective 2023
         </Row>
       </Container>
     </footer>

@@ -105,7 +105,7 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  CLUB• Time
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -123,7 +123,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
+                href="https://twitter.com/useClubTime"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Twitter"
@@ -135,7 +135,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
+                href="https://www.facebook.com/profile.php?id=61552133932133"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
@@ -147,7 +147,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="https://www.instagram.com/useclubtime/"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Instagram"
