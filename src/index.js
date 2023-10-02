@@ -38,7 +38,7 @@ root.render(
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       {/* <Route path="/" element={<Index />} /> */}
-      <Route path="*" element={<Navigate to="/components" replace />} />
+      <Route path="*" element={<Index />} />
     </Routes>
   </BrowserRouter>
 );
