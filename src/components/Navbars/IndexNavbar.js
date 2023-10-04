@@ -82,7 +82,7 @@ export default function IndexNavbar() {
             <span>CLUB• Time </span>
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Crisp Games
+            Designed and Coded by Sun Flora Collective
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}

@@ -38,11 +38,15 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+import handleSubmit from "lib/handleSubmit";
 export default function Signup() {
   const [fullNameFocus, setFullNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
-  const [passwordFocus, setPasswordFocus] = React.useState(false);
+
+  function onSubmit() {
+    alert("submitted")
+    handleSubmit(fullNameFocus, emailFocus);
+  }
   return (
     <div className="section section-signup">
       <Container>
@@ -85,7 +89,7 @@ export default function Signup() {
                   alt="..."
                   src={require("assets/img/square-purple-1.png")}
                 />
-                <CardTitle tag="h4">Register</CardTitle>
+                <CardTitle tag={'h3'}>Register</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form className="form">
@@ -123,37 +127,11 @@ export default function Signup() {
                       onBlur={(e) => setEmailFocus(false)}
                     />
                   </InputGroup>
-                  <InputGroup
-                    className={classnames({
-                      "input-group-focus": passwordFocus,
-                    })}
-                  >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-lock-circle" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Password"
-                      type="text"
-                      onFocus={(e) => setPasswordFocus(true)}
-                      onBlur={(e) => setPasswordFocus(false)}
-                    />
-                  </InputGroup>
-                  <FormGroup check className="text-left">
-                    <Label check>
-                      <Input type="checkbox" />
-                      <span className="form-check-sign" />I agree to the{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        terms and conditions
-                      </a>
-                      .
-                    </Label>
-                  </FormGroup>
+                  
                 </Form>
               </CardBody>
               <CardFooter>
-                <Button className="btn-round" color="primary" size="lg">
+                <Button className="btn-round" color="primary" size="lg" type="submit" onSubmit={onSubmit()}>
                   Get Started
                 </Button>
               </CardFooter>
